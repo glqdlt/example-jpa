@@ -39,7 +39,7 @@ public abstract class Animal {
     private String name;
     private TypeEnum type;
 
-    @Convert(converter = AnimalTypeMapper.class)
+    @Convert(converter = AnimalTypeMapperConverter.class)
     @Column(insertable = false, updatable = false, name = "animal_type")
     public TypeEnum getType() {
         return type;
