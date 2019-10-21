@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 2019-10-21
  */
 @Entity
-@DiscriminatorValue("0")
+@DiscriminatorValue(AnimalTypeMapper.DOG)
 public class Dog extends Animal implements Serializable {
     public Dog() {
     }
