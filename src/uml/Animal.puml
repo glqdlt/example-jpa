@@ -1,0 +1,17 @@
+@startuml
+class Animal{
+    -name
+    -seq
+}
+
+class Dog{
+
+}
+
+class Bird{
+    -wing
+}
+
+Animal <|-- Bird
+Animal <|-- Dog
+@enduml
